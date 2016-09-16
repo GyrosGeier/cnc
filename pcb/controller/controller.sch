@@ -1,0 +1,283 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Altera
+LIBS:silabs
+LIBS:diode
+LIBS:ESD_Protection
+LIBS:Worldsemi
+LIBS:controller-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 9400 750  1200 1650
+U 57CC89BE
+F0 "GRBL" 60
+F1 "grbl_controller.sch" 60
+F2 "SPINDLE_DIR" O L 9400 1900 60 
+F3 "SPINDLE_PWM" O L 9400 2000 60 
+F4 "ENABLE" O L 9400 800 60 
+F5 "Z_DIR" O L 9400 1600 60 
+F6 "Y_DIR" O L 9400 1300 60 
+F7 "X_DIR" O L 9400 1000 60 
+F8 "Z_STEP" O L 9400 1500 60 
+F9 "Y_STEP" O L 9400 1200 60 
+F10 "X_STEP" O L 9400 900 60 
+F11 "COOLANT" O L 9400 2200 60 
+F12 "GRBL_RESET" I R 10600 800 60 
+F13 "GRBL_HOLD" I R 10600 900 60 
+F14 "GRBL_START" I R 10600 1000 60 
+F15 "PROBE" I L 9400 2300 60 
+F16 "Z_LIMIT" I L 9400 1700 60 
+F17 "Y_LIMIT" I L 9400 1400 60 
+F18 "X_LIMIT" I L 9400 1100 60 
+F19 "~PGM_RESET" O R 10600 1200 60 
+F20 "~RESET" I R 10600 1300 60 
+$EndSheet
+$Comp
+L EPM2210F324 U1
+U 1 1 57CE9220
+P 7200 2750
+F 0 "U1" H 7200 4947 60  0000 C CNN
+F 1 "EPM2210F324" H 7200 4841 60  0000 C CNN
+F 2 "SMD_Packages:BGA-324-1mm" H 7200 2750 60  0001 C CNN
+F 3 "" H 7200 2750 60  0001 C CNN
+	1    7200 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_02X05 P1
+U 1 1 57CEA612
+P 2800 1200
+F 0 "P1" H 2800 1615 50  0000 C CNN
+F 1 "CONN_02X05" H 2800 1524 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x05" H 2800 0   50  0001 C CNN
+F 3 "" H 2800 0   50  0000 C CNN
+	1    2800 1200
+	1    0    0    -1  
+$EndComp
+Text Label 2550 1000 2    60   ~ 0
+TCK
+Text Label 2550 1100 2    60   ~ 0
+TDO
+Text Label 2550 1200 2    60   ~ 0
+TMS
+Text Label 2550 1400 2    60   ~ 0
+TDI
+$Comp
+L GND #PWR01
+U 1 1 57CEAF21
+P 3250 1600
+F 0 "#PWR01" H 3250 1350 50  0001 C CNN
+F 1 "GND" H 3255 1427 50  0000 C CNN
+F 2 "" H 3250 1600 50  0000 C CNN
+F 3 "" H 3250 1600 50  0000 C CNN
+	1    3250 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR02
+U 1 1 57CEAFAB
+P 3150 900
+F 0 "#PWR02" H 3150 750 50  0001 C CNN
+F 1 "+3.3V" H 3165 1073 50  0000 C CNN
+F 2 "" H 3150 900 50  0000 C CNN
+F 3 "" H 3150 900 50  0000 C CNN
+	1    3150 900 
+	1    0    0    -1  
+$EndComp
+Text Label 6400 1300 2    60   ~ 0
+TMS
+Text Label 6400 1400 2    60   ~ 0
+TCK
+Text Label 6400 1500 2    60   ~ 0
+TDI
+Text Label 6400 1600 2    60   ~ 0
+TDO
+$Comp
+L +3.3V #PWR03
+U 1 1 57CEBBB1
+P 6300 700
+F 0 "#PWR03" H 6300 550 50  0001 C CNN
+F 1 "+3.3V" H 6315 873 50  0000 C CNN
+F 2 "" H 6300 700 50  0000 C CNN
+F 3 "" H 6300 700 50  0000 C CNN
+	1    6300 700 
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR04
+U 1 1 57CEBE7D
+P 700 800
+F 0 "#PWR04" H 700 650 50  0001 C CNN
+F 1 "+3.3V" H 715 973 50  0000 C CNN
+F 2 "" H 700 800 50  0000 C CNN
+F 3 "" H 700 800 50  0000 C CNN
+	1    700  800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C1
+U 1 1 57CEBF07
+P 800 1100
+F 0 "C1" H 892 1146 50  0000 L CNN
+F 1 "100n" H 892 1055 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 800 1100 50  0001 C CNN
+F 3 "" H 800 1100 50  0000 C CNN
+	1    800  1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C2
+U 1 1 57CEBFA3
+P 1100 1100
+F 0 "C2" H 1192 1146 50  0000 L CNN
+F 1 "100n" H 1192 1055 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 1100 1100 50  0001 C CNN
+F 3 "" H 1100 1100 50  0000 C CNN
+	1    1100 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C3
+U 1 1 57CEC041
+P 1400 1100
+F 0 "C3" H 1492 1146 50  0000 L CNN
+F 1 "100n" H 1492 1055 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 1400 1100 50  0001 C CNN
+F 3 "" H 1400 1100 50  0000 C CNN
+	1    1400 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C4
+U 1 1 57CEC0DB
+P 1700 1100
+F 0 "C4" H 1792 1146 50  0000 L CNN
+F 1 "100n" H 1792 1055 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 1700 1100 50  0001 C CNN
+F 3 "" H 1700 1100 50  0000 C CNN
+	1    1700 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 57CEC177
+P 1800 1400
+F 0 "#PWR05" H 1800 1150 50  0001 C CNN
+F 1 "GND" H 1805 1227 50  0000 C CNN
+F 2 "" H 1800 1400 50  0000 C CNN
+F 3 "" H 1800 1400 50  0000 C CNN
+	1    1800 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 1000 3250 1000
+Wire Wire Line
+	3250 1000 3250 1600
+Wire Wire Line
+	3050 1400 3250 1400
+Connection ~ 3250 1400
+Wire Wire Line
+	3050 1100 3150 1100
+Wire Wire Line
+	3150 1100 3150 900 
+Wire Wire Line
+	6400 1100 6300 1100
+Wire Wire Line
+	6300 1100 6300 700 
+Wire Wire Line
+	6400 800  6300 800 
+Connection ~ 6300 800 
+Wire Wire Line
+	6300 900  6400 900 
+Connection ~ 6300 900 
+Wire Wire Line
+	6400 1000 6300 1000
+Connection ~ 6300 1000
+Wire Wire Line
+	700  800  700  900 
+Wire Wire Line
+	700  900  1700 900 
+Wire Wire Line
+	1700 900  1700 1000
+Wire Wire Line
+	1400 900  1400 1000
+Connection ~ 1400 900 
+Wire Wire Line
+	1100 900  1100 1000
+Connection ~ 1100 900 
+Wire Wire Line
+	800  900  800  1000
+Connection ~ 800  900 
+Wire Wire Line
+	800  1200 800  1300
+Wire Wire Line
+	800  1300 1800 1300
+Wire Wire Line
+	1800 1300 1800 1400
+Wire Wire Line
+	1700 1200 1700 1300
+Connection ~ 1700 1300
+Wire Wire Line
+	1400 1200 1400 1300
+Connection ~ 1400 1300
+Wire Wire Line
+	1100 1200 1100 1300
+Connection ~ 1100 1300
+$Sheet
+S 3850 2200 550  1000
+U 57DB5308
+F0 "USB Interface" 60
+F1 "usb_interface.sch" 60
+F2 "SUSPEND" O R 4400 3050 60 
+F3 "~SUSPEND" O R 4400 3150 60 
+F4 "~TXD" O R 4400 2250 60 
+F5 "~RXD" I R 4400 2350 60 
+F6 "~CTS" I R 4400 2450 60 
+F7 "~RTS" O R 4400 2550 60 
+F8 "~DSR" I R 4400 2650 60 
+F9 "~DTR" O R 4400 2750 60 
+F10 "~DCD" I R 4400 2850 60 
+F11 "~RI" I R 4400 2950 60 
+$EndSheet
+$EndSCHEMATC

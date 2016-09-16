@@ -1,0 +1,320 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Altera
+LIBS:silabs
+LIBS:diode
+LIBS:ESD_Protection
+LIBS:Worldsemi
+LIBS:controller-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CP2104 U?
+U 1 1 57DB57F8
+P 8200 3850
+F 0 "U?" H 8200 4825 50  0000 C CNN
+F 1 "CP2104" H 8200 4734 50  0000 C CNN
+F 2 "Housings_DFN_QFN:QFN-24-1EP_4x4mm_Pitch0.5mm" H 8200 3850 50  0001 C CNN
+F 3 "" H 8200 3850 50  0001 C CNN
+	1    8200 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L USB_B P?
+U 1 1 57DB5807
+P 1900 3700
+F 0 "P?" V 1880 3887 50  0000 L CNN
+F 1 "USB_B" V 1971 3887 50  0000 L CNN
+F 2 "Connect:USB_B" V 1850 3600 50  0001 C CNN
+F 3 "" V 1850 3600 50  0000 C CNN
+	1    1900 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 57DB5811
+P 1500 4000
+F 0 "#PWR?" H 1500 3750 50  0001 C CNN
+F 1 "GND" H 1505 3827 50  0000 C CNN
+F 2 "" H 1500 4000 50  0000 C CNN
+F 3 "" H 1500 4000 50  0000 C CNN
+	1    1500 4000
+	1    0    0    -1  
+$EndComp
+Text Label 7500 4000 2    50   ~ 0
+USB_D+
+Text Label 7500 4100 2    50   ~ 0
+USB_D-
+Text Label 7500 3400 2    50   ~ 0
+USB_VCC
+Text Label 7500 3600 2    50   ~ 0
+USB_VCC
+$Comp
+L GND #PWR?
+U 1 1 57DB581B
+P 7400 4700
+F 0 "#PWR?" H 7400 4450 50  0001 C CNN
+F 1 "GND" H 7405 4527 50  0000 C CNN
+F 2 "" H 7400 4700 50  0000 C CNN
+F 3 "" H 7400 4700 50  0000 C CNN
+	1    7400 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR?
+U 1 1 57DB5821
+P 7400 3000
+F 0 "#PWR?" H 7400 2850 50  0001 C CNN
+F 1 "+3.3V" H 7415 3173 50  0000 C CNN
+F 2 "" H 7400 3000 50  0000 C CNN
+F 3 "" H 7400 3000 50  0000 C CNN
+	1    7400 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 57DB5827
+P 7400 4400
+F 0 "C?" H 7308 4446 50  0000 R CNN
+F 1 "4,7u" H 7308 4355 50  0000 R CNN
+F 2 "Capacitors_SMD:C_0603" H 7400 4400 50  0001 C CNN
+F 3 "" H 7400 4400 50  0000 C CNN
+	1    7400 4400
+	1    0    0    -1  
+$EndComp
+NoConn ~ 7500 3200
+$Comp
+L Led_Small D?
+U 1 1 57DB5831
+P 9600 4300
+F 0 "D?" V 9646 4397 50  0000 L CNN
+F 1 "orange" V 9555 4397 50  0000 L CNN
+F 2 "LEDs:LED_0603" V 9600 4300 50  0001 C CNN
+F 3 "" V 9600 4300 50  0000 C CNN
+	1    9600 4300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Led_Small D?
+U 1 1 57DB5838
+P 9800 4300
+F 0 "D?" V 9846 4232 50  0000 R CNN
+F 1 "orange" V 9755 4232 50  0000 R CNN
+F 2 "LEDs:LED_0603" V 9800 4300 50  0001 C CNN
+F 3 "" V 9800 4300 50  0000 C CNN
+	1    9800 4300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 57DB583F
+P 9600 4000
+F 0 "R?" H 9659 4046 50  0000 L CNN
+F 1 "60" H 9659 3955 50  0000 L CNN
+F 2 "Resistors_SMD:R_0402" H 9600 4000 50  0001 C CNN
+F 3 "" H 9600 4000 50  0000 C CNN
+	1    9600 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 57DB5846
+P 9800 4000
+F 0 "R?" H 9859 4046 50  0000 L CNN
+F 1 "60" H 9859 3955 50  0000 L CNN
+F 2 "Resistors_SMD:R_0402" H 9800 4000 50  0001 C CNN
+F 3 "" H 9800 4000 50  0000 C CNN
+	1    9800 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR?
+U 1 1 57DB5861
+P 9700 3700
+F 0 "#PWR?" H 9700 3550 50  0001 C CNN
+F 1 "+3.3V" H 9715 3873 50  0000 C CNN
+F 2 "" H 9700 3700 50  0000 C CNN
+F 3 "" H 9700 3700 50  0000 C CNN
+	1    9700 3700
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8900 4400
+$Comp
+L R_Small R?
+U 1 1 57DB586A
+P 7300 3800
+F 0 "R?" V 7104 3800 50  0000 C CNN
+F 1 "10k" V 7195 3800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" H 7300 3800 50  0001 C CNN
+F 3 "" H 7300 3800 50  0000 C CNN
+	1    7300 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L +3.3V #PWR?
+U 1 1 57DB5871
+P 7100 3800
+F 0 "#PWR?" H 7100 3650 50  0001 C CNN
+F 1 "+3.3V" V 7115 3928 50  0000 L CNN
+F 2 "" H 7100 3800 50  0000 C CNN
+F 3 "" H 7100 3800 50  0000 C CNN
+	1    7100 3800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L DRTR5V0U2SR U?
+U 1 1 57DB5879
+P 5000 3800
+F 0 "U?" H 5000 4247 60  0000 C CNN
+F 1 "DRTR5V0U2SR" H 5000 4141 60  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-143" H 5000 3800 60  0001 C CNN
+F 3 "" H 5000 3800 60  0001 C CNN
+	1    5000 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 57DB5881
+P 4300 4100
+F 0 "#PWR?" H 4300 3850 50  0001 C CNN
+F 1 "GND" H 4305 3927 50  0000 C CNN
+F 2 "" H 4300 4100 50  0000 C CNN
+F 3 "" H 4300 4100 50  0000 C CNN
+	1    4300 4100
+	1    0    0    -1  
+$EndComp
+Text Label 4400 3600 2    60   ~ 0
+USB_VCC
+Text Label 5600 4000 0    60   ~ 0
+USB_D-
+Text Label 5600 3600 0    60   ~ 0
+USB_D+
+Text Label 1600 3700 2    50   ~ 0
+USB_D+
+Text Label 1600 3500 2    50   ~ 0
+USB_VCC
+Text Label 1600 3600 2    50   ~ 0
+USB_D-
+Wire Wire Line
+	1600 3800 1500 3800
+Wire Wire Line
+	1500 3800 1500 4000
+Wire Wire Line
+	7400 4500 7400 4600
+Wire Wire Line
+	7400 4600 7400 4700
+Wire Wire Line
+	7400 4600 7500 4600
+Wire Wire Line
+	7500 3100 7400 3100
+Wire Wire Line
+	7400 3100 7400 3000
+Wire Wire Line
+	7500 4300 7400 4300
+Connection ~ 7400 4600
+Wire Wire Line
+	7100 3800 7200 3800
+Wire Wire Line
+	7400 3800 7500 3800
+Wire Wire Line
+	4400 4000 4300 4000
+Wire Wire Line
+	4300 4000 4300 4100
+$Comp
+L GND #PWR?
+U 1 1 57DB63A1
+P 2000 4000
+F 0 "#PWR?" H 2000 3750 50  0001 C CNN
+F 1 "GND" H 2005 3827 50  0000 C CNN
+F 2 "" H 2000 4000 50  0000 C CNN
+F 3 "" H 2000 4000 50  0000 C CNN
+	1    2000 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9700 3700 9700 3800
+Wire Wire Line
+	9600 3800 9600 3900
+Wire Wire Line
+	9800 3900 9800 3800
+Wire Wire Line
+	9600 3800 9700 3800
+Wire Wire Line
+	9700 3800 9700 3800
+Wire Wire Line
+	9700 3800 9800 3800
+Connection ~ 9700 3800
+Wire Wire Line
+	9600 4100 9600 4200
+Wire Wire Line
+	9800 4200 9800 4100
+Wire Wire Line
+	9800 4400 9800 4600
+Wire Wire Line
+	9800 4600 8900 4600
+Wire Wire Line
+	8900 4500 9600 4500
+Wire Wire Line
+	9600 4500 9600 4400
+NoConn ~ 8900 4300
+Text HLabel 8900 3100 2    60   Output ~ 0
+~TXD
+Text HLabel 8900 3200 2    60   Input ~ 0
+~RXD
+Text HLabel 8900 3300 2    60   Input ~ 0
+~CTS
+Text HLabel 8900 3400 2    60   Output ~ 0
+~RTS
+Text HLabel 8900 3500 2    60   Input ~ 0
+~DSR
+Text HLabel 8900 3600 2    60   Output ~ 0
+~DTR
+Text HLabel 8900 3700 2    60   Input ~ 0
+~DCD
+Text HLabel 8900 3800 2    60   Input ~ 0
+~RI
+Text HLabel 8900 4000 2    60   Output ~ 0
+SUSPEND
+Text HLabel 8900 4100 2    60   Output ~ 0
+~SUSPEND
+$EndSCHEMATC
